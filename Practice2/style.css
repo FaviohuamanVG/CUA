@@ -1,0 +1,112 @@
+/* Cuerpo*/
+body{
+    background-color: #322b9e;
+}
+
+/*Titulo*/
+
+.titulo-centrado{
+    align-self: center;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Establecer un estilo base para el menú */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3498db; /* Color de fondo del menú */
+    text-align: center;
+}
+
+/* Establecer estilo para los elementos de la lista */
+.menu li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+/* Estilo para los enlaces dentro de los elementos de la lista */
+.menu li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto en los enlaces */
+    font-weight: bold;
+    padding: 10px 20px; /* Espacio interno en los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/*Parrafo*/
+.parrafo, .parrafo1{
+    align-self: center;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*Sub tema*/
+.Sub-tema{
+    align-self: center;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Estilo para el contenedor de imágenes circulares */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% del alto de la ventana */
+}
+
+.imagen-circular {
+    width: 150px; /* Ancho del contenedor */
+    height: 150px; /* Altura del contenedor */
+    border-radius: 50%; /* Borde redondeado para hacerlo circular */
+    overflow: hidden; /* Ocultar el exceso de imagen fuera del contenedor */
+    margin: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.imagen-circular img {
+    width: 100%; /* Ajustar la imagen al tamaño del contenedor */
+    height: auto; /* Mantener la proporción de aspecto de la imagen */
+    display: block; /* Evitar espacios en blanco debajo de la imagen */
+    align-items: center;
+    border-color: #dfdee7;
+}
+
+
+.boton{
+    color: aqua;
+}
+
+.calendario {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para resaltar el día actual (ejemplo: 15 de septiembre de 2023) */
+td.current-day {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
