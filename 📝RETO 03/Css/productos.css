@@ -199,7 +199,7 @@ ul {
 }
 
 .logo {
-  max-width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+  max-width: 40%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
 }
 
 .footer-col ul li:not(:last-child) {

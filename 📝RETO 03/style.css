@@ -9,6 +9,9 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+body{
+  background-color: #ffffff;
+}
 /* Estilos para el encabezado */
 header {
   background: url('https://i.pinimg.com/originals/bf/b9/4e/bfb94e54c45afd24384db5ad32d71d15.gif');
@@ -19,7 +22,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #ffffff;
 }
 
 header h1 {
@@ -96,17 +99,19 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   margin: 10px 0;
+  color: rgb(0, 0, 0);
 }
 
 .precio-item {
   font-weight: bold;
   font-size: 22px;
   margin: 10px 0;
+  color: rgb(0, 0, 0);
 }
 
 .boton-item {
   background-color: black;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
@@ -115,12 +120,12 @@ nav {
 }
 
 .boton-item:hover {
-  background-color: #555;
+  background-color: rgb(113, 209, 23);
 }
 
 /* Estilos para el carrito de compras */
 .carrito {
-  border: 1px solid #666;
+  border: 1px solid #d81b1b;
   width: 35%;
   margin-top: 30px;
   border-radius: 10px;
@@ -134,7 +139,7 @@ nav {
 
 .header-carrito {
   background-color: #000;
-  color: #fff;
+  color: #a53030;
   text-align: center;
   padding: 30px 0;
 }
@@ -142,7 +147,7 @@ nav {
 .carrito-item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #d43636;
   padding: 20px;
 }
 
@@ -193,14 +198,14 @@ nav {
   position: absolute;
   right: 15px;
   top: 15px;
-  color: #000;
+  color: #e01717;
   font-size: 20px;
   width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid #d10000;
   cursor: pointer;
   display: block;
   background: transparent;
@@ -212,7 +217,7 @@ nav {
 }
 
 .carrito-total {
-  background-color: #f3f3f3;
+  background-color: #c01111;
   padding: 30px;
 }
 
@@ -259,6 +264,7 @@ nav {
 
 h2 {
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .form-group {
@@ -268,6 +274,7 @@ h2 {
 label {
   display: block;
   font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 input[type="text"],
@@ -276,7 +283,7 @@ input[type="date"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #e91e1e;
   border-radius: 5px;
 }
 
@@ -286,7 +293,7 @@ textarea {
 
 button {
   background-color: #007bff;
-  color: #fff;
+  color: rgb(227, 228, 227);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -296,7 +303,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: green;
 }
 
 @media (max-width: 768px) {
@@ -317,6 +324,7 @@ button:hover {
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: #000;
 }
 
 .container {
