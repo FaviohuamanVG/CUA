@@ -1,0 +1,254 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Estilos de la página de producto */
+.producto-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto-image {
+    flex: 0 0 100%; /* La imagen ocupa todo el ancho */
+    text-align: center; /* Centra la imagen */
+}
+
+
+.producto-image img {
+    max-width: 100%;
+}
+
+.producto-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.producto-details h2,h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.producto-details p {
+    margin: 10px 0;
+}
+
+.producto-details button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.producto-details button:hover {
+    background-color: #005688;
+}
+
+/* Estilos para la sección de Opiniones de Clientes */
+.opiniones {
+    margin-top: 20px;
+}
+
+.opinion {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilos para la sección de Preguntas Frecuentes */
+.faq {
+    margin-top: 20px;
+}
+
+.pregunta {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilos para la sección de Detalles de Envío y Devoluciones */
+.envio-devoluciones {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilos para la sección de Productos Relacionados */
+.productos-relacionados {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; /* Espacio entre productos relacionados */
+}
+
+.producto-relacionado {
+    flex: 0 0 30%; /* Ancho deseado para productos relacionados */
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto-relacionado img {
+    max-width: 100%;
+}
+
+/* Estilos generales para botones */
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005688;
+}
+
+/*Site Footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #19a2f1;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  margin-right: 80px; /* Añade un margen derecho para separar de la columna del logo */
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #fffbfb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 767px) {
+  .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+      width: 100%;
+  }
+}
