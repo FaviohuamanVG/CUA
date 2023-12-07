@@ -1,0 +1,178 @@
+/*formulario estilo*/
+.custom-form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(0, 0, 0); /* Cambia 'red' al color que prefieras */
+}
+
+.custom-form {
+    display: grid;
+    gap: 15px;
+}
+
+/* Estilos para los elementos del formulario */
+.form-group {
+    display: grid;
+    gap: 5px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #000;
+}
+
+.input-group {
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Estilos para el botón de enviar */
+.btn-submit {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #000000;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .custom-form-container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .custom-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Estilos para la sección de contacto */
+.contact-info {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(0, 0, 0); /* Cambia 'red' al color que prefieras */
+
+}
+
+.info-heading {
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+.info-divider {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-section {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-subheading {
+    font-size: 18px;
+    color: #4caf50;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: #000000;
+}
+
+.map-container {
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .contact-info {
+        padding: 15px;
+    }
+}
+
+/* Estilos para hacer la tabla responsive */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 0, 0, 0.05); /* Color de fondo para filas impares */
+}
+
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/contactanos.css">
+  <link rel="icon" type="image/png"
+    href="https://assetsio.reedpopcdn.com/how-hollow-knights-community-crafted-gibberish-into-a-real-language-1567781461548.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="../menu.js"></script>
+</head>
+
+<body>
+  <header class="hero">
+    <!-- Barra de navegación con clases "nav" y "container" -->
+    <nav class="nav container1">
+      <!-- Logo de la navegación -->
+      <div class="nav__logo">
+        <h2 class="nav__title">¡Entonces estás en el lugar correcto!</h2>
+      </div>
+
+      <!-- Lista de enlaces de la barra de navegación -->
+      <button class="nav__menu" onclick="toggleMenu()">☰ Menú</button>
+
+      <!-- Mantén tu lista de enlaces sin cambios -->
+      <ul class="nav__link nav__link--menu">
+        <!-- Elemento de la lista para el enlace de Inicio -->
+        <li class="nav__items">
+          <a href="../index.html" class="nav__links">Inicio</a>
+        </li>
+        <!-- Elemento de la lista para el enlace de Quiénes Somos -->
+        <li class="nav__items">
+          <a href="./yo.html" class="nav__links">Acerca de mi</a>
+        </li>
+        <!-- Elemento de la lista para el enlace de Talleres Formativos -->
+        <li class="nav__items">
+          <a href="./Proyectos.html" class="nav__links">Proyectos</a>
+        </li>
+        <!-- Elemento de la lista para el enlace de Contáctenos -->
+        <li class="nav__items">
+          <a href="./contactanos.html" class="nav__links">Contactenos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contenedor de la sección hero con clase "container" -->
+    <section class="hero__container container1">
+      <!-- Título principal de la sección hero -->
+      <h1 class="hero__title">Hola, soy Favio</h1>
+      <!-- Párrafo de la sección hero -->
+      <p class="hero__paragraph">¡Bienvenido a mi rincón digital! <br>
+        Soy un entusiasta del mundo de la tecnología y el análisis
+        de sistemas. <br>
+        Desde mi época en la secundaria, he estado explorando este fascinante campo y aplicando mis
+        conocimientos a través de proyectos emocionantes.</p>
+      <!-- Enlace de llamada a la acción en la sección hero -->
+      <div class="contact-icons">
+        <a href="https://github.com/FaviohuamanVG" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"class="icon">
+          GitHub
+        </a>
+      
+        <a href="mailto:favio.huaman@vallegrande.edu.pe">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png"class="icon">
+          Gmail
+        </a>
+      
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png"class="icon">
+          Teléfono
+        </a>
+      </div>
+    </section>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¡Estoy emocionado de conectarme contigo! Si tienes alguna pregunta o simplemente quieres saludar, no dudes en
+        ponerte en contacto.</p>
+
+        <h2>Formulario</h2>
+        <form>
+            <label for="nombres">Nombre</label>
+            <input type="text" id="nombres" name="nombres" required>
+            <label for="correo">Correo</label>
+            <input type="correo" id="correo" name="correo" required>
+            <label for="asunto">Asunto</label>
+            <input type="asunto" id="asunto" name="asunto" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button id="btnCrear" type="submit" class="btn-submit">ENVIAR</button>
+        </form>
+        <div class="table-responsive">
+            <table class="table table-danger table-striped mb-3" id="dataTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Asunto</th>
+                        <th scope="col">Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                </tbody>
+            </table>
+        </div>
+        <script src="../registros.js"></script>
+
+      <div class="contact-icons">
+        <a href="https://github.com/FaviohuamanVG" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2021/09/23/06/59/github-6648895_1280.jpg" class="icon">
+        </a>
+
+        <a href="mailto:favio.huaman@vallegrande.edu.pe">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" class="icon">
+        </a>
+
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" class="icon">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img
+          src="https://assetsio.reedpopcdn.com/how-hollow-knights-community-crafted-gibberish-into-a-real-language-1567781461548.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+          alt="Logo del footer">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./yo.html">Acerca de mí</a></li>
+          <li><a href="./Proyectos.html">Proyectos</a></li>
+          <li><a href="./contactanos.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/FaviohuamanVG" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2021/09/23/06/59/github-6648895_1280.jpg" class="icon">
+        </a>
+
+        <a href="mailto:favio.huaman@vallegrande.edu.pe">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" class="icon">
+        </a>
+
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" class="icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Anderson Huaman T. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+/* Importa la fuente Poppins desde Google Fonts con diferentes pesos para su uso en la página. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Establece la fuente global para el cuerpo del documento. */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Define un contenedor principal con anchura máxima, margen automático y relleno variable. */
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+/* Estilos para la sección "Hero", incluyendo un fondo con degradado y una imagen de fondo con una máscara de recorte. */
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('https://cursos.aiu.edu/images/lenguaje-programacion-estudiar.jpg');
+    background-size: cover;
+    clip-path: rect(0, auto, auto, 0);
+    z-index: -1;
+}
+
+/* Estilos para la barra de navegación, con variables para el relleno y otras propiedades. */
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Otros estilos para la barra de navegación, incluyendo estilos para enlaces y menú. */
+.nav__title {
+    font-weight: 300;
+    color: wheat;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display: var(--show, none);
+}
+
+/* Estilos específicos para el contenedor de la sección Hero, con un ancho máximo y relleno. */
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/* Estilos para el título y el párrafo de la sección Hero. */
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__paragraph {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de llamada a la acción (CTA). */
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .contact-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-icons a:hover {
+    color: #2091F9; /* Cambia el color al pasar el ratón */
+  }
+  
+  .contact-icons .icon {
+    width: 40px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: 40px; /* Ajusta el tamaño de los iconos según sea necesario */
+    margin-bottom: 10px;
+  }
+
+@media (max-width: 768px) {
+    .nav__link--menu {
+      display: none;
+    }
+
+    .nav__menu {
+      display: block;
+    }
+
+    .nav__items {
+      display: block;
+    }
+
+    .hero__title {
+      font-size: 2.5rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    }
+}
+
+/*Presentacion*/
+
+.profile-image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.presentation {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.profile-content {
+    margin-top: 20px;
+}
+
+/*Proyectos*/
+
+.content-wrapper {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.site_button {
+    display: block;
+    border-radius: 25px;
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    margin: 25px auto;
+    padding: 0 !important;
+    transition: all .2s;
+}
+.site_button a {
+    color: #141414;
+    display: block;
+    padding: 8px !important;
+    text-decoration: none;
+}
+.site_button:hover {
+    opacity: 1;
+    background: #0e0d0d;
+}
+.site_button:hover a {
+    color: var(--accent-color);
+}
+
+.svc-card-global {
+    padding: 50px 20px;
+    background: #212555;
+    color: #fff;
+}
+.svc-card-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.svc-card {
+    position: relative;
+    padding: 0;
+    margin: 10px 1%;
+    border: 5px solid #eee;
+    background: #fff;
+    transition: transform .3s;
+}
+.svc-card:hover {
+    transform: translateY(-8px);
+}
+.svc-card img {
+    max-width: 350px;
+    height: 275px;
+    width: 100%;
+    background: #222;
+}
+.svc-card h3 {
+    font-size: 1.33em;
+}
+.svc-card h3 .subheading {
+    color: #999;
+    font-size: .8em;
+    text-align: center;
+}
+
+/*Habilidades*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Footetr */
+footer {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 90%; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 80px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-bottom: 10px; /* Agregado para un mejor espaciado en dispositivos más pequeños */
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+}
+
+.footer-links li {
+    margin-right: 20px;
+    margin-bottom: 10px; /* Agregado para un mejor espaciado en dispositivos más pequeños */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-social img {
+    width: 30px; /* Ajusta el tamaño de los iconos sociales según sea necesario */
+    margin-right: 15px;
+    margin-bottom: 10px; /* Agregado para un mejor espaciado en dispositivos más pequeños */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .footer-links li {
+        margin-right: 10px; /* Ajusta el espaciado entre elementos en pantallas más pequeñas */
+    }
+
+    .footer-links a {
+        font-size: 12px; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 460px) {
+    .footer-links li {
+        margin-right: 5px; /* Ajusta el espaciado entre elementos para pantallas más pequeñas */
+    }
+
+    .footer-links a {
+        font-size: 10px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+}

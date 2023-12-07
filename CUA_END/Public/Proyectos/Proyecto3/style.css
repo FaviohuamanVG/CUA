@@ -1,0 +1,69 @@
+body {
+    background-color: #f5e1bf;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.diary {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+}
+
+.page {
+    background-color: #f5ecd8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transform: rotate(3deg); /* Aplica una ligera rotación */
+    background-image: url('papel-antiguo.jpg');
+   background-repeat: repeat; 
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.header span {
+    font-size: 14px;
+    color: #555;
+}
+
+.content {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content p:first-child {
+    text-indent: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.diary {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.image{
+    float: left;
+    margin-right: 20px;
+    max-width: 150px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}

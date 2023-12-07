@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="custom-form-container">
+            <form class="custom-form">
+                <h3>¡Gracias por tomar un momento para completar este formulario!</h3>
+                <div class="form-group">
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <div class="input-group">
+                        <input type="text" id="nombres" class="form-control" placeholder="Ingresa tus nombres">
+                        <span class="icon" id="nombres-icon"></span>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <div class="input-group">
+                        <input type="text" id="apellidos" class="form-control" placeholder="Ingresa tus apellidos">
+                        <span class="icon" id="apellidos-icon"></span>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo institucional.</label>
+                    <div class="input-group">
+                        <input type="email" id="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                        <span class="icon" id="email-icon"></span>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="tipodocumento" class="form-label">Elección de una carrera profesional</label>
+                    <select id="tipodocumento" class="form-control">
+                        <option value="Analisis">Analisis de Sistemas</option>
+                        <option value="Agragria">Produccion Agragria</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="numdocumento" class="form-label">Número de DNI</label>
+                    <div class="input-group">
+                        <input type="number" id="numdocumento" class="form-control"
+                            placeholder="Ingresa tu número de documento">
+                        <span class="icon" id="numdocumento-icon"></span>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="contrasena" class="form-label">Contraseña (mínimo 6 caracteres, letras y números)</label>
+                    <div class="input-group">
+                        <input type="password" id="contrasena" class="form-control" placeholder="Ingresa tu contraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                        <span class="icon" id="togglePassword" onclick="togglePassword()"></span>
+                    </div>
+                    <small id="contrasenaHelp" class="form-text text-muted">Mínimo 6 caracteres, al menos una letra y un número.</small>
+                </div>
+    
+                <div class="form-group">
+                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento (dd/mm/aaaa)</label>
+                    <input type="text" id="fechaNacimiento" class="form-control" placeholder="Ingresa tu fecha de nacimiento" maxlength="10">
+                    <small id="fechaNacimientoHelp" class="form-text text-muted">Formato: dd/mm/aaaa</small>
+                </div>
+    
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" id="aceptoTerminos" class="form-check-input">
+                        <label for="aceptoTerminos" class="form-check-label">Acepto los términos y condiciones</label>
+                    </div>
+                </div>
+    
+                <button id="btnCrear" type="submit" class="btn-submit">ENVIAR</button>
+    
+            </form>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-danger table-striped mb-3" id="dataTable">
+            <thead>
+                <tr>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Elección de Carrera</th>
+                    <th scope="col">Número de DNI</th>
+                    <th scope="col">Correo Institucional</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+                <!-- Aquí se llenarán los datos dinámicamente -->
+                <td><input type="password" name="password"></td>
+            </tbody>
+        </table>
+        <script src="registro.js"></script>
+        <script src="./validacion.js"></script>
+    </div>
+</body>
+</html>
