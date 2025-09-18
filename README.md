@@ -19,7 +19,7 @@
 - **Símbolo**: MCH
 - **Decimales**: 2 (formato monetario: 100 = 1.00 sol)
 - **Red**: Ethereum Holesky Testnet
-- **Dirección del Contrato**: `0x377...D2C1` (actualizar con tu dirección)
+- **Dirección del Contrato**: `0x377...D2C1`
 
 ### 📋 Funcionalidades
 
@@ -89,8 +89,8 @@
 ## 👥 Equipo de Desarrollo
 
 **Proyecto de Innovación Blockchain**
-- Desarrollo: [Tu nombre]
-- Institución: [Tu universidad/institución]
+- Desarrollo: Favio Huaman
+- Institución: IEP Vallegrande
 - Fecha: Septiembre 2025
 
 ## 📞 Contacto
