@@ -96,8 +96,8 @@
 ## 📞 Contacto
 
 Para más información sobre este proyecto de innovación blockchain:
-- Email: [tu-email]
-- GitHub: [tu-usuario]
+- Email: favio.huaman@vallegrande.edu.pe
+- GitHub: FaviohuamanVG
 
 ---
 
